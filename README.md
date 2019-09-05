@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Work Hard 👋</h1>
 
-> Browser extension made to keep you working hard
+> Get things done, that's it.
 
 ## Author
 
@@ -12,3 +12,4 @@
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+]
