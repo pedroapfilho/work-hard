@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Work Hard 👋</h1>
+<h1 align="center">Welcome to Work Hard 💪</h1>
 
 > Get things done, that's it.
 
