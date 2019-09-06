@@ -2,6 +2,16 @@
 
 > Get things done, that's it.
 
+## Blocked websites
+
+```
+Facebook
+Twitter
+Instagram
+Youtube
+9GAG
+```
+
 ## Author
 
 👤 **Pedro Filho**
@@ -12,4 +22,3 @@
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-]

@@ -1,6 +1,6 @@
 chrome.storage.sync.set({ active: false });
 
-const options = ["twitter", "instagram", "facebook", "9gag"];
+const options = ["facebook", "twitter", "instagram", "youtube", "9gag"];
 
 chrome.browserAction.onClicked.addListener(() => {
   //TODO close the tab that the user is in (maybe)
