@@ -22,3 +22,9 @@ Youtube
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## Roadmap
+
+- [ ] Typescript
+- [ ] Webpack
+- [ ] API to sync blocked websites

@@ -3,8 +3,6 @@ chrome.storage.sync.set({ active: false });
 const options = ["facebook", "twitter", "instagram", "youtube", "9gag"];
 
 chrome.browserAction.onClicked.addListener(() => {
-  //TODO close the tab that the user is in (maybe)
-
   chrome.storage.sync.get(["active"], status => {
     let { active } = status;
     if (active) {
@@ -26,12 +24,10 @@ chrome.browserAction.onClicked.addListener(() => {
 });
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  //TODO take the list from the storage sync
-
   chrome.storage.sync.get(["active"], ({ active }) => {
     if (active) {
       options.forEach(name => {
-        if (tab.url.includes(name)) chrome.tabs.remove(tabId);
+        if (tab.url.includes(`${name}.`)) chrome.tabs.remove(tabId);
       });
     }
   });
