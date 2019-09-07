@@ -23,7 +23,7 @@ chrome.browserAction.onClicked.addListener(() => {
   });
 });
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener((tabId, _, tab) => {
   chrome.storage.sync.get(["active"], ({ active }) => {
     if (active) {
       options.forEach(name => {

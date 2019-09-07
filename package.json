@@ -1,0 +1,23 @@
+{
+  "name": "work-hard",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/pedroapfilho/work-hard.git",
+  "author": "Pedro Filho <pedro@filho.me>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clear": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.88",
+    "copy-webpack-plugin": "^5.0.4",
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-merge": "^4.2.2"
+  }
+}
