@@ -1,6 +1,6 @@
 chrome.storage.sync.set({ active: false });
 
-const options = ["facebook", "twitter", "instagram", "youtube", "9gag"];
+const options = ["facebook", "twitter", "instagram", "youtube", "9gag", "producthunt"];
 
 chrome.browserAction.onClicked.addListener(() => {
   chrome.storage.sync.get(["active"], status => {
