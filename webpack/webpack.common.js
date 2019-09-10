@@ -1,25 +1,25 @@
-const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
-const srcDir = "../src/";
+const path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
+const srcDir = '../src/'
 
 module.exports = {
   entry: {
-    background: path.join(__dirname, srcDir + "background.ts")
+    background: path.join(__dirname, srcDir + 'background.ts')
   },
   output: {
-    path: path.join(__dirname, "../dist"),
-    filename: "[name].js"
+    path: path.join(__dirname, '../dist'),
+    filename: '[name].js'
   },
   optimization: {
     splitChunks: {
-      name: "vendor",
-      chunks: "initial"
+      name: 'vendor',
+      chunks: 'initial'
     }
   },
   module: {
     rules: [
       {
-        use: "ts-loader",
+        use: 'ts-loader',
         exclude: /node_modules/
       }
     ]
@@ -27,5 +27,5 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   },
-  plugins: [new CopyPlugin([{ from: "public/", to: "dist/" }])]
-};
+  plugins: [new CopyPlugin([{ from: 'public/', to: '.' }])]
+}
