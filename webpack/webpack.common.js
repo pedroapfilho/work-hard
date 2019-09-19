@@ -5,8 +5,7 @@ const srcDir = "../src/";
 
 module.exports = {
   entry: {
-    background: path.join(__dirname, srcDir + "background.ts"),
-    options: path.join(__dirname, srcDir + "options.ts")
+    background: path.join(__dirname, srcDir + "background.ts")
   },
   output: {
     path: path.join(__dirname, "../dist"),

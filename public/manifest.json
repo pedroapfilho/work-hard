@@ -3,11 +3,8 @@
   "name": "Work Hard",
   "version": "0.1",
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
-  "options_page": "options.html", 
   "description": "Get things done, that's it.",
   "icons": {
     "16": "icons/icon16.png",
@@ -18,10 +15,5 @@
     "default_icon": "icons/fun128.png",
     "default_title": "Work Hard"
   },
-  "permissions": [
-    "tabs",
-    "<all_urls>",
-    "cookies",
-    "storage"
-  ]
+  "permissions": ["tabs", "<all_urls>", "cookies", "storage"]
 }
