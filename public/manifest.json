@@ -5,6 +5,7 @@
   "background": {
     "scripts": ["background.js"]
   },
+  "options_page": "options.html",
   "description": "Get things done, that's it.",
   "icons": {
     "16": "icons/icon16.png",

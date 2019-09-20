@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #1a1a1a;
+  background-color: #f7f7f7;
+}
+
+#app {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.title,
+.subtitle {
+  font-weight: normal;
+  padding-bottom: 0.5em;
+}
+
+.blockInputContainer {
+  width: 350px;
+  margin: 2em;
+  display: flex;
+}
+
+#blockInput {
+  flex: 1;
+  border: none;
+  padding: 1em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 4px 0 0 4px;
+}
+
+.blockButton {
+  border: none;
+  padding: 1em;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blockButtonInput {
+  border-radius: 0 4px 4px 0;
+}
+
+.blockButton:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.blockButton:active {
+  box-shadow: none;
+}
+
+.blockListContainer {
+  width: 350px;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+#blockList {
+  list-style: none;
+}
+
+.blockListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  width: 100%;
+}
+
+.blockListTitle {
+  font-size: 1.5em;
+}
+
+.blockButtonRemove {
+  background-color: #ff6767;
+  border-radius: 4px;
+}

@@ -34,7 +34,7 @@ chrome.tabs.onUpdated.addListener((tabId, _, tab) => {
   chrome.storage.sync.get(["active"], ({ active }) => {
     if (active) {
       options.forEach(name => {
-        if (tab.url.includes(`${name}.`)) chrome.tabs.remove(tabId);
+        if (tab.url.includes(name.toLowerCase())) chrome.tabs.remove(tabId);
       });
     }
   });
