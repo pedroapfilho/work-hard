@@ -1,34 +1,47 @@
-const input = document.getElementById("blockInput");
+const input = document.getElementById("blockInput") as HTMLInputElement;
 
-const button = document.getElementById("blockBtn");
+const addButton = document.getElementById("addButton");
 
 const ul = document.getElementById("blockList");
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const createListItem = () => {
-  const hr = document.createElement("hr");
+const createListItem = (item?: string): void => {
+  const value = item || input.value;
+
   const li = document.createElement("li");
-  const span = document.createElement("span");
-  const button = document.createElement("button");
-
-  hr.classList.add("divider");
   li.classList.add("blockListItem");
-  span.classList.add("blockListTitle");
-  button.classList.add("blockButton", "blockButtonRemove");
 
+  const span = document.createElement("span");
+  span.classList.add("blockListTitle");
+  span.innerText = value;
+
+  const button = document.createElement("button");
+  button.classList.add("blockButton", "blockButtonRemove");
   button.innerText = "Remove";
 
-  span.innerText = "WEBSITE GOES HERE";
+  chrome.storage.sync.get(["blockList"], ({ blockList }) => {
+    //TODO add way to serialize input (not empty and not duplicated)
+    if (input.value) {
+      chrome.storage.sync.set({
+        blockList: [...blockList, input.value]
+      });
+    }
 
-  ul.appendChild(hr);
+    ul.appendChild(li).append(span, button);
 
-  ul.appendChild(li).append(span, button);
+    input.value = "";
+  });
 };
 
 input.addEventListener("keypress", keyPressed => {
   if (keyPressed.which === 13) createListItem();
 });
 
-button.addEventListener("click", () => {
+addButton.addEventListener("click", () => {
   createListItem();
 });
+
+chrome.storage.sync.get(["blockList"], ({ blockList }) => {
+  blockList.forEach(item => createListItem(item));
+});
+
+//TODO add way to remove items

@@ -1,14 +1,3 @@
-chrome.storage.sync.set({ active: false });
-
-const options = [
-  "facebook",
-  "twitter",
-  "instagram",
-  "youtube",
-  "9gag",
-  "producthunt"
-];
-
 chrome.browserAction.onClicked.addListener(() => {
   chrome.storage.sync.get(["active"], status => {
     let { active } = status;
@@ -33,9 +22,26 @@ chrome.browserAction.onClicked.addListener(() => {
 chrome.tabs.onUpdated.addListener((tabId, _, tab) => {
   chrome.storage.sync.get(["active"], ({ active }) => {
     if (active) {
-      options.forEach(name => {
-        if (tab.url.includes(name.toLowerCase())) chrome.tabs.remove(tabId);
+      chrome.storage.sync.get(["blockList"], ({ blockList }) => {
+        blockList.forEach(name => {
+          if (tab.url.includes(name.toLowerCase())) chrome.tabs.remove(tabId);
+        });
       });
     }
+  });
+});
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ active: false });
+
+  chrome.storage.sync.set({
+    blockList: [
+      "facebook.com",
+      "twitter.com",
+      "instagram.com",
+      "youtube.com",
+      "9gag.com",
+      "producthunt.com"
+    ]
   });
 });

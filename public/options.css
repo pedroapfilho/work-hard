@@ -57,6 +57,7 @@ body {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .blockButtonInput {
@@ -80,20 +81,23 @@ body {
 
 #blockList {
   list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .blockListItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
+  padding: 1em;
+  border-top: 1px solid #ccc;
 }
 
 .divider {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+
   margin: 0.5em 0;
   padding: 0;
   width: 100%;
@@ -101,7 +105,6 @@ body {
 
 .blockListTitle {
   font-size: 1.25em;
-  text-transform: capitalize;
 }
 
 .blockButtonRemove {
