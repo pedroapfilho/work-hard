@@ -64,7 +64,7 @@ body {
 }
 
 .blockButton:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .blockButton:active {
@@ -72,9 +72,10 @@ body {
 }
 
 .blockListContainer {
-  width: 350px;
+  width: 400px;
   max-height: 350px;
   overflow-y: scroll;
+  padding: 0 2em;
 }
 
 #blockList {
@@ -85,21 +86,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 0;
+  padding: 0.5em;
 }
 
-hr {
+.divider {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0.5em 0;
   padding: 0;
   width: 100%;
 }
 
 .blockListTitle {
-  font-size: 1.5em;
+  font-size: 1.25em;
+  text-transform: capitalize;
 }
 
 .blockButtonRemove {
