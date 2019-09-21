@@ -2,16 +2,10 @@
 
 > Get things done, that's it.
 
-## Blocked websites
+## Features
 
-```
-Facebook
-Twitter
-Instagram
-Youtube
-9GAG
-Product Hunt
-```
+- Let's you list a bunch of websites that you want to block.
+- ...
 
 ## Author
 
@@ -19,6 +13,15 @@ Product Hunt
 
 - Twitter: [@pedrofilhome](https://twitter.com/pedrofilhome)
 - Github: [@pedroapfilho](https://github.com/pedroapfilho)
+
+## Roadmap
+
+- [x] Add options page
+- [ ] Add a way to serialize input (not empty and not duplicated)
+- [ ] Add way to sync blocklist somewhere
+- [ ] Better image and description on Web Store
+- [ ] Prepare to publish on Firefox
+- [ ] Think about more features
 
 ## Show your support
 

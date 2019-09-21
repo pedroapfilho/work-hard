@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Work Hard",
-  "version": "0.1",
+  "version": "0.2",
   "background": {
     "scripts": ["background.js"]
   },
@@ -16,5 +16,5 @@
     "default_icon": "icons/fun128.png",
     "default_title": "Work Hard"
   },
-  "permissions": ["tabs", "<all_urls>", "cookies", "storage"]
+  "permissions": ["tabs", "<all_urls>", "storage"]
 }

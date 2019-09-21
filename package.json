@@ -1,13 +1,13 @@
 {
   "name": "work-hard",
-  "version": "0.0.1",
+  "version": "0.2",
   "main": "index.js",
   "repository": "https://github.com/pedroapfilho/work-hard.git",
   "author": "Pedro Filho <pedro@filho.me>",
   "license": "MIT",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
-    "build": "webpack --config webpack/webpack.prod.js",
+    "build": "yarn clear && webpack --config webpack/webpack.prod.js",
     "clear": "rimraf dist"
   },
   "devDependencies": {
