@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Work Hard",
-  "version": "0.2",
+  "version": "0.3",
   "background": {
     "scripts": ["background.js"]
   },
