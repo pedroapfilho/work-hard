@@ -21,6 +21,8 @@
 - [ ] Add way to sync blocklist somewhere
 - [ ] Better image and description on Web Store
 - [ ] Prepare to publish on Firefox
+- [ ] Dark mode
+- [ ] Find and list known bugs to fix for V1
 - [ ] Think about more features
 
 ## Show your support
