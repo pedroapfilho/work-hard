@@ -31,15 +31,20 @@ const createListItem = (item?: string): void => {
   });
 
   chrome.storage.sync.get(["blockList"], ({ blockList }) => {
-    if (input.value) {
-      chrome.storage.sync.set({
-        blockList: [...blockList, input.value]
-      });
+    if (value && !blockList.includes(input.value)) {
+      if (input.value) {
+        chrome.storage.sync.set({
+          blockList: [...blockList, input.value]
+        });
+      }
+
+      ul.appendChild(li).append(span, button);
+
+      input.value = null;
+      input.focus();
+    } else {
+      input.value = null;
     }
-
-    ul.appendChild(li).append(span, button);
-
-    input.value = "";
   });
 };
 
