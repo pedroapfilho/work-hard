@@ -18,9 +18,7 @@
 
 - [x] Add options page
 - [x] Add a way to serialize input (not empty and not duplicated)
-- [ ] Automatically compress files to publish.
-- [ ] Better image and description on Web Store
-- [ ] Dark mode
+- [x] Better image and description on Web Store
 - [ ] Find and list known bugs to fix for V1
 - [ ] Think about more features
 
