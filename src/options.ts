@@ -44,6 +44,7 @@ const createListItem = (item?: string): void => {
       input.focus();
     } else {
       input.value = null;
+      input.focus();
     }
   });
 };
