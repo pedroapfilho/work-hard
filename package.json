@@ -11,19 +11,19 @@
     "clear": "rimraf dist"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.88",
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
+    "@types/chrome": "^0.0.89",
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
     "copy-webpack-plugin": "^5.0.4",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.0",
-    "ts-loader": "^6.1.0",
+    "ts-loader": "^6.2.0",
     "typescript": "^3.6.3",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
     "webpack-merge": "^4.2.2"
   }
 }
