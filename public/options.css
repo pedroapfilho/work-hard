@@ -6,8 +6,20 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #1a1a1a;
-  background-color: #f7f7f7;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #1a1a1a;
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ffffff;
+    background-color: #1a1a1a;
+  }
 }
 
 #app {
@@ -68,6 +80,20 @@ body {
   cursor: pointer;
 }
 
+@media (prefers-color-scheme: light) {
+  .blockButton {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .blockButton {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+}
+
 .blockButtonInput {
   border-radius: 0 4px 4px 0;
 }
@@ -116,5 +142,6 @@ body {
 
 .blockButtonRemove {
   background-color: #ff6767;
+  color: #ffffff;
   border-radius: 4px;
 }

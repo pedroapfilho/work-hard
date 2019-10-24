@@ -1,6 +1,6 @@
 {
   "name": "work-hard",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "main": "index.js",
   "repository": "https://github.com/pedroapfilho/work-hard.git",
   "author": "Pedro Filho <pedro@filho.me>",
@@ -11,18 +11,18 @@
     "clear": "rimraf dist"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.89",
-    "@typescript-eslint/eslint-plugin": "^2.3.2",
-    "@typescript-eslint/parser": "^2.3.2",
+    "@types/chrome": "^0.0.91",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
     "copy-webpack-plugin": "^5.0.4",
     "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.0",
-    "ts-loader": "^6.2.0",
-    "typescript": "^3.6.3",
-    "webpack": "^4.41.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-merge": "^4.2.2"
   }
