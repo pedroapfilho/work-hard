@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const srcDir = "../src/";
@@ -30,5 +29,5 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
-  plugins: [new CopyPlugin([{ from: "public/", to: "." }])]
+  plugins: [new CopyPlugin([{ from: "public/", to: ".", ignore: ".DS_Store" }])]
 };
