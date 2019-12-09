@@ -29,5 +29,7 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
-  plugins: [new CopyPlugin([{ from: "public/", to: ".", ignore: ".DS_Store" }])]
+  plugins: [
+    new CopyPlugin([{ from: "public/", to: ".", ignore: [".DS_Store"] }])
+  ]
 };
