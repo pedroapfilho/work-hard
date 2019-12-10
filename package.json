@@ -11,6 +11,9 @@
     "clear": "rimraf dist",
     "test": "xo"
   },
+  "xo": {
+    "prettier": true
+  },
   "devDependencies": {
     "@types/chrome": "^0.0.91",
     "@typescript-eslint/eslint-plugin": "^2.11.0",
