@@ -1,5 +1,8 @@
 <h1 align="center">Welcome to Work Hard 💪</h1>
 
+- Google Chrome: https://chrome.google.com/webstore/detail/work-hard/agbhcnkkohkomabkadaojnmmedjpofna
+- Mozilla Firefox: https://addons.mozilla.org/en-US/firefox/addon/work-hard-official/
+
 > Get things done, that's it.
 
 ## Features
