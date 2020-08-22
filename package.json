@@ -1,6 +1,6 @@
 {
   "name": "work-hard",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "repository": "https://github.com/pedroapfilho/work-hard.git",
   "author": "Pedro Filho <pedro@filho.me>",
   "license": "MIT",
@@ -14,9 +14,9 @@
     "copy-webpack-plugin": "^6.0.3",
     "rimraf": "^3.0.0",
     "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.1.1"
+    "webpack-merge": "^5.1.2"
   }
 }

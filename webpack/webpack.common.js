@@ -5,31 +5,39 @@ const srcDir = "../src/";
 module.exports = {
   entry: {
     background: path.join(__dirname, srcDir + "background.ts"),
-    options: path.join(__dirname, srcDir + "options.ts")
+    options: path.join(__dirname, srcDir + "options.ts"),
   },
   output: {
     path: path.join(__dirname, "../dist"),
-    filename: "[name].js"
+    filename: "[name].js",
   },
   optimization: {
     splitChunks: {
       name: "vendor",
-      chunks: "initial"
-    }
+      chunks: "initial",
+    },
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+    extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
-    new CopyPlugin([{ from: "public/", to: ".", ignore: [".DS_Store"] }])
-  ]
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "public/",
+          to: ".",
+          globOptions: { ignore: [".DS_Store"] },
+        },
+      ],
+    }),
+  ],
 };
